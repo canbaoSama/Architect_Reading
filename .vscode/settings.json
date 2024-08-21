@@ -1,0 +1,43 @@
+{
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "eslint.workingDirectories": [],
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "files.associations": {
+        "*.vue": "vue",
+        "*.wxa": "wxa"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "vue",
+        "wxa",
+        "typescript",
+        "jsx"
+    ],
+    "eslint.runtime": "",
+    "git.autofetch": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "explorer.confirmDelete": false,
+    "eslint.debug": true,
+    "files.eol": "\n",
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "onFocusChange",
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
