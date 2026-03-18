@@ -1,0 +1,42 @@
+---
+description: Vue 3 Composition API 最佳实践
+globs: ["**/*.vue"]
+alwaysApply: false
+---
+
+# Vue 3 Composition API
+
+遵循 Vue 3 Composition API 与最佳实践。
+
+## 目录结构示例
+
+```
+src/
+├── components/
+├── composables/
+├── views/
+├── router/
+├── store/
+├── assets/
+├── App.vue
+└── main.ts
+```
+
+## 核心实践
+
+- 用 `setup()` 或 `<script setup>` 组织逻辑
+- 用 `ref` 和 `reactive` 管理响应式状态
+- 用 `computed()` 实现计算属性
+- 用 `watch` / `watchEffect` 处理副作用
+- 生命周期用 `onMounted`、`onUpdated` 等
+- 使用 `provide` / `inject` 做依赖注入
+
+## 其他规范
+
+1. 使用 TypeScript 保证类型安全
+2. 正确定义 props 和 emits
+3. 需要时使用 `Teleport`
+4. 异步组件配合 `Suspense`
+5. 做好错误处理
+6. 遵循 Vue 3 风格指南和命名约定
+7. 推荐使用 Vite 进行开发和构建

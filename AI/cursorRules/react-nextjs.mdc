@@ -1,0 +1,29 @@
+---
+description: React / Next.js 组件开发最佳实践
+globs: ["**/*.tsx", "**/*.jsx"]
+alwaysApply: false
+---
+
+# React / Next.js 组件开发
+
+创建 React 组件时遵循以下流程与规范。
+
+## 创建流程
+
+1. **明确目的**：确定组件的用途、功能和设计
+2. **逐步思考**：按步骤梳理实现思路
+3. **检查复用**：先查找 `components/`、`@/components` 等是否已有类似组件
+4. **生成并适配**：生成组件后按项目结构适配，统一 import 与目录
+
+## 规范
+
+- 使用 TypeScript
+- 使用 Tailwind CSS 做样式
+- 公共 UI 从 `@/components/ui` 或 shadcn 引入
+- 遵循现有组件风格和目录结构
+- 减少 AI 生成的注释，用清晰的命名表达意图
+
+## 数据获取与渲染
+
+- 遵循 Next.js 文档中的数据获取、渲染、路由最佳实践
+- 确保组件可复用并符合既有设计模式

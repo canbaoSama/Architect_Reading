@@ -1,0 +1,12 @@
+{
+  "name": "architect-reading",
+  "version": "1.0.0",
+  "description": "架构师阅读文档与周报生成工具",
+  "private": true,
+  "scripts": {
+    "report": "node subRec.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

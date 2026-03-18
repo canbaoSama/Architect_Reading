@@ -1,0 +1,46 @@
+---
+description: 新项目创建时遵循的标准项目结构（含根目录与 src 一层）
+alwaysApply: true
+---
+
+# 项目结构规范
+
+新建 Vue/Vite 前端项目时，按以下结构组织。**src 下仅规划一层文件夹**，避免层级过深。
+
+## 完整目录结构
+
+```
+项目根目录/
+├── .env.development
+├── .env.production
+├── .gitignore
+├── .vscode/
+├── index.html
+├── package.json
+├── public/
+├── README.md
+├── scripts/
+├── src/
+│   ├── api
+│   ├── assets
+│   ├── components
+│   ├── config
+│   ├── constants
+│   ├── hooks
+│   ├── layouts
+│   ├── modules
+│   ├── pages
+│   ├── router
+│   ├── store
+│   ├── styles
+│   ├── types
+│   └── utils
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## 常用依赖（按需选用）
+
+- 核心：vue、vue-router、pinia、vite、typescript
+- UI：element-plus
+- 工具：dayjs、axios、lodash-es、mitt、uuid、@vueuse/core

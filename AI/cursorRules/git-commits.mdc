@@ -1,0 +1,47 @@
+---
+description: 使用 Conventional Commits 规范生成 commit message。当用户请求编写 commit、git 提交、或涉及版本控制时适用
+alwaysApply: false
+---
+
+# Git Conventional Commits
+
+生成 commit 时遵循 [Conventional Commits](https://www.conventionalcommits.org/) 规范。
+
+## 基本格式
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+## Type 类型
+
+| Type | 说明 |
+|------|------|
+| `feat` | 新功能（对应 MINOR） |
+| `fix` | 修复 bug（对应 PATCH） |
+| `docs` | 文档变更 |
+| `style` | 代码格式（不影响逻辑） |
+| `refactor` | 重构 |
+| `perf` | 性能优化 |
+| `test` | 测试相关 |
+| `build` | 构建/工具链 |
+| `ci` | CI 配置 |
+| `chore` | 杂项 |
+
+## 示例
+
+```
+feat(auth): add JWT login
+fix(api): handle empty response
+docs: update README
+refactor(utils): simplify date formatting
+```
+
+## Breaking Change
+
+- 在 footer 中写 `BREAKING CHANGE: 描述`
+- 或在 type 后加 `!`：`feat!: change API signature`
